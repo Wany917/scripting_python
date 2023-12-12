@@ -2,7 +2,7 @@ name: JavaScript CI
 
 on:
   push:
-    branches: [ Trunk ]
+    branches: [ '**' ]
   pull_request:
     branches: [ Trunk ]
 
