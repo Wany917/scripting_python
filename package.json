@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:python": "pytest",
-    "test:all": "npm run ./src/test/workflows.test.js && npm run test:python"
+    "test:all": "npm run src/test/workflows.test.js && npm run test:python"
   },
   "keywords": [],
   "author": "Krampteam",
