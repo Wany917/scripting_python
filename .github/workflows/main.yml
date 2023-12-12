@@ -2,7 +2,12 @@ name: JavaScript CI
 
 on:
   push:
-    branches: [ '**' ]
+    branches: 
+      - Trunk
+      - feature/**
+      - bugfix/**
+      - release/**
+      - setup/**
   pull_request:
     branches: [ Trunk ]
 
