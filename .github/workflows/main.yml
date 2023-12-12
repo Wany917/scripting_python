@@ -2,7 +2,12 @@ name: JavaScript CI
 
 on:
   push:
-    branches: [ Trunk ]
+    branches: 
+      - Trunk
+      - feature/**
+      - bugfix/**
+      - release/**
+      - setup/**
   pull_request:
     branches: [ Trunk ]
 
@@ -24,3 +29,14 @@ jobs:
     - run: npm ci
     - run: npm run lint --if-present
     - run: npm test
+
+    - name: Setup Python
+      uses: actions/setup-python@v5.0.0
+      with:
+        node-version: "3.x"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest scapy colorama 
+    - name: Run pytest
+      run:  pytest src/test
