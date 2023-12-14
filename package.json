@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./src/test/workflows.test.js"
+    "test:python": "pytest",
+    "test:all": "node ./src/test/workflows.test.js"
   },
   "keywords": [],
   "author": "Krampteam",
