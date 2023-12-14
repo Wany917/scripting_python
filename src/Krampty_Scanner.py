@@ -7,3 +7,5 @@ def list_files_in_dir(directory):
 def read_file(file_path):
     with open(file_path, 'r') as file:
         return file.readlines()
+      
+    return os.listdir(directory)

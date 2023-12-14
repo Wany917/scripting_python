@@ -5,9 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test:python": "pytest",
-    "test:all": "node ./src/test/workflows.test.js"
+    "test:all": "node ./src/test/workflows.test.js",
+    "lint": "eslint **/*.js",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "Krampteam",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "husky": "^8.0.3"
+  }
 }
