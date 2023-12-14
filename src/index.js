@@ -7,4 +7,6 @@ let parse_network_info = "done"
 
 let retrieve_ip_config = "done"
 
+let write_interface_details = "done"
+
 console.log(aa)
