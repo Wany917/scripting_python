@@ -9,3 +9,12 @@ def read_file(file_path):
         return file.readlines()
       
     return os.listdir(directory)
+
+
+def display_interface():
+    interfaces = get_network_interfaces()
+    for interface, details in interfaces.items():
+        print(f"Interface: {interface}")
+        for key, value in details.items():
+            print(f" {key}: {value}")
+        print()
