@@ -1,4 +1,4 @@
-name: JavaScript CI
+name: Job CI
 
 on:
   push:
@@ -27,6 +27,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
+    - run: npm init @eslint/config
     - run: npm run lint --if-present
     - run: npm run test:all
 
