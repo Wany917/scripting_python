@@ -13,5 +13,4 @@ let main_function = "done"
 let ping_network = "done"
 let retrieve_subnet_mask = "done"
 let socket_scan = "done"
-
 console.log(aa)

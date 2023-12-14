@@ -5,7 +5,7 @@ on:
     branches: 
       - Trunk
       - feature/**
-      - bugfix/**
+      - hotfix/**
       - release/**
       - setup/**
   pull_request:
