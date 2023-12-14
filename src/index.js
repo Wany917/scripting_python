@@ -1,4 +1,6 @@
 const aa = "aaa";
 let argmuent_parsing = "done";
 
-console.log(aa);
+let network_interface_retrieval = "done"
+
+console.log(aa)
